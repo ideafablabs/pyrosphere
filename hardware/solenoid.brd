@@ -4220,6 +4220,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+<package name="SOD-123">
+<description>&lt;b&gt;SOD-123&lt;/b&gt;
+&lt;p&gt;Source: http://www.diodes.com/datasheets/ds30139.pdf&lt;/p&gt;</description>
+<smd name="C" x="-1.85" y="0" dx="1.4" dy="1.4" layer="1" rot="R90"/>
+<smd name="A" x="1.85" y="0" dx="1.4" dy="1.4" layer="1" rot="R90"/>
+<text x="-1.27" y="1.016" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.873" y1="0.7" x2="0.873" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="0.873" y1="0.7" x2="0.873" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="0.873" y1="-0.7" x2="-0.873" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-0.873" y1="-0.7" x2="-0.873" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="-0.3" y1="0" x2="0.3" y2="0.4" width="0.2032" layer="21"/>
+<wire x1="0.3" y1="0.4" x2="0.3" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="0.3" y1="-0.4" x2="-0.3" y2="0" width="0.2032" layer="21"/>
+<rectangle x1="-1.723" y1="-0.45" x2="-0.973" y2="0.4" layer="51"/>
+<rectangle x1="0.973" y1="-0.45" x2="1.723" y2="0.4" layer="51"/>
+<rectangle x1="-0.5" y1="-0.5" x2="-0.3" y2="0.5" layer="21"/>
+<polygon width="0.2032" layer="21">
+<vertex x="-0.1" y="0"/>
+<vertex x="0.2" y="0.2"/>
+<vertex x="0.2" y="-0.2"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4409,7 +4447,7 @@ This is the Seeed 2 layer board rules</description>
 <elements>
 <element name="$T1" library="mishafarms" package="SOT89R" value="BSS606N" x="20.32" y="10.16" smashed="yes" rot="R180"/>
 <element name="OUT-B" library="SparkFun-Connectors" package="1X02" value="" x="20.32" y="1.778" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.1902" y="0.9398" size="1.016" layer="21" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="18.7452" y="6.2738" size="1.016" layer="21" font="vector" ratio="10"/>
 <attribute name="VALUE" x="23.495" y="0.508" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="B" library="led" package="CHIPLED_0805" value="" x="20.828" y="14.224" smashed="yes" rot="R90">
@@ -4455,7 +4493,7 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="VALUE" x="16.002" y="16.764" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="OUT-G" library="SparkFun-Connectors" package="1X02" value="" x="14.605" y="1.778" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.7292" y="0.6858" size="1.016" layer="21" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="17.2466" y="7.112" size="1.016" layer="21" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="17.78" y="0.508" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C4" library="SparkFun-Capacitors" package="0805" value="400nf" x="13.716" y="17.526" rot="R180"/>
@@ -4474,7 +4512,7 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="VALUE" x="9.652" y="16.764" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="OUT-R" library="SparkFun-Connectors" package="1X02" value="" x="8.255" y="1.778" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.5062" y="0.8128" size="1.016" layer="21" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="10.8458" y="7.239" size="1.016" layer="21" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="11.43" y="0.508" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C5" library="SparkFun-Capacitors" package="0805" value="400nf" x="10.922" y="17.526"/>
@@ -4491,6 +4529,9 @@ This is the Seeed 2 layer board rules</description>
 <element name="R7" library="SparkFun-Passives" package="0805" value="33" x="5.588" y="5.08" rot="R270"/>
 <element name="C6" library="SparkFun-Capacitors" package="0805" value=".1uf" x="4.572" y="10.668" rot="R90"/>
 <element name="R8" library="SparkFun-Passives" package="0805" value="100" x="7.8232" y="17.0942" rot="R180"/>
+<element name="D1" library="microbuilder" package="SOD-123" value="" x="11.176" y="3.3528" rot="R90"/>
+<element name="D2" library="microbuilder" package="SOD-123" value="" x="23.6982" y="3.2258" rot="R90"/>
+<element name="D3" library="microbuilder" package="SOD-123" value="" x="17.4498" y="3.3274" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -4613,6 +4654,9 @@ This is the Seeed 2 layer board rules</description>
 <vertex x="27.686" y="0"/>
 <vertex x="27.686" y="3.048"/>
 </polygon>
+<contactref element="D1" pad="C"/>
+<contactref element="D2" pad="C"/>
+<contactref element="D3" pad="C"/>
 </signal>
 <signal name="VCC">
 <contactref element="OPTO-B" pad="1"/>
@@ -4671,6 +4715,9 @@ This is the Seeed 2 layer board rules</description>
 <contactref element="$T1" pad="4"/>
 <wire x1="20.32" y1="9.26" x2="20.32" y2="4.318" width="1.6764" layer="1"/>
 <wire x1="20.32" y1="11.56" x2="20.32" y2="9.26" width="0.4064" layer="1"/>
+<contactref element="D2" pad="A"/>
+<wire x1="20.32" y1="4.318" x2="23.6982" y2="4.318" width="0.4064" layer="1"/>
+<wire x1="23.6982" y1="4.318" x2="23.6982" y2="5.0758" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="OPTO-G" pad="2"/>
@@ -4713,6 +4760,9 @@ This is the Seeed 2 layer board rules</description>
 <contactref element="$T2" pad="4"/>
 <wire x1="14.605" y1="9.26" x2="14.605" y2="4.318" width="1.6764" layer="1"/>
 <wire x1="14.605" y1="11.56" x2="14.605" y2="9.26" width="0.4064" layer="1"/>
+<contactref element="D3" pad="A"/>
+<wire x1="14.605" y1="4.318" x2="17.4498" y2="4.318" width="0.4064" layer="1"/>
+<wire x1="17.4498" y1="4.318" x2="17.4498" y2="5.1774" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="OPTO-R" pad="2"/>
@@ -4752,6 +4802,9 @@ This is the Seeed 2 layer board rules</description>
 <contactref element="$T3" pad="4"/>
 <wire x1="8.255" y1="9.26" x2="8.255" y2="4.318" width="1.6764" layer="1"/>
 <wire x1="8.255" y1="11.56" x2="8.255" y2="9.26" width="0.4064" layer="1"/>
+<contactref element="D1" pad="A"/>
+<wire x1="8.255" y1="4.318" x2="11.176" y2="4.318" width="0.4064" layer="1"/>
+<wire x1="11.176" y1="4.318" x2="11.176" y2="5.2028" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U$1" pad="6"/>
