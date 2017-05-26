@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -158,7 +158,7 @@
 <wire x1="58.4508" y1="-0.127" x2="58.4508" y2="33.833" width="0" layer="20"/>
 <wire x1="58.4508" y1="33.833" x2="0" y2="33.96" width="0" layer="20"/>
 <wire x1="0" y1="33.96" x2="0" y2="0" width="0" layer="20"/>
-<text x="45.6184" y="10.7442" size="1.27" layer="22" font="vector" rot="MR0">WS2811 Solenoid driver 1A V1.0</text>
+<text x="45.6184" y="10.7442" size="1.27" layer="22" font="vector" rot="MR0">WS2811 Solenoid driver 1A V1.1</text>
 <wire x1="0" y1="173.38115" x2="173.38098125" y2="173.38115" width="0.025" layer="37"/>
 <polygon width="0" layer="51">
 <vertex x="19.5072" y="39.32123125"/>
@@ -225,31 +225,6 @@
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
-<package name="SOT89R@1">
-<description>&lt;b&gt;SOT89 Reflow soldering&lt;/b&gt;</description>
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1104" width="0.1524" layer="51"/>
-<wire x1="2.2724" y1="-1.1104" x2="-2.2724" y2="-1.1104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="-1.1104" x2="-2.2724" y2="1.6104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="1.6104" x2="2.2724" y2="1.6104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="-1.1024" x2="-2.2724" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="-2.2724" y1="1.6104" x2="-1.2136" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1024" width="0.1524" layer="21"/>
-<wire x1="1.2636" y1="1.6104" x2="2.2724" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="-0.5776" y1="-1.1104" x2="-0.9364" y2="-1.1104" width="0.1524" layer="21"/>
-<wire x1="0.9224" y1="-1.1104" x2="0.5636" y2="-1.1104" width="0.1524" layer="21"/>
-<smd name="1" x="1.5" y="-1.75" dx="0.7" dy="1.1" layer="1"/>
-<smd name="2" x="-1.5" y="-1.75" dx="0.7" dy="1.1" layer="1"/>
-<smd name="3" x="0" y="-1.4" dx="0.7" dy="1.8" layer="1" stop="no" cream="no"/>
-<smd name="4" x="0" y="0.9" dx="2" dy="2.8" layer="1"/>
-<text x="-2.205" y="2.455" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.205" y="-3.825" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="-2.15" x2="-1.25" y2="-1.15" layer="51"/>
-<rectangle x1="-0.25" y1="-2.15" x2="0.25" y2="-1.15" layer="51"/>
-<rectangle x1="1.25" y1="-2.15" x2="1.75" y2="-1.15" layer="51"/>
-<rectangle x1="-0.85" y1="1.65" x2="0.85" y2="2.2" layer="51"/>
-<rectangle x1="-0.35" y1="-2.3" x2="0.35" y2="-1.2" layer="31"/>
-<rectangle x1="-0.45" y1="-2.4" x2="0.45" y2="-1.1" layer="29"/>
 </package>
 <package name="SOT89R">
 <description>&lt;b&gt;SOT89 Reflow soldering&lt;/b&gt;</description>
@@ -1361,16 +1336,16 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="NAME" x="12.7832" y="26.2406" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="14.8232" y="27.1866" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="U2" library="mishafarms" package="SOT89R@1" value="AP2204R" x="11.811" y="5.4864" smashed="yes" rot="R90">
+<element name="U2" library="mishafarms" package="SOT89R" value="AP2204R" x="11.811" y="5.4864" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.356" y="3.2814" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="15.9916" y="0.4366" size="1.27" layer="27" rot="R90"/>
 <attribute name="VOLTAGE" value="5.0" x="11.811" y="5.4864" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" package="0805" value="1uf" x="11.3792" y="9.525" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.7028" y="10.2489" size="0.4064" layer="25" rot="R180"/>
-<attribute name="VALUE" x="9.9568" y="9.6266" size="0.4064" layer="27" rot="R180"/>
+<element name="C1" library="SparkFun-Capacitors" package="0805" value="1uf" x="10.4648" y="1.3208" smashed="yes">
+<attribute name="NAME" x="12.1412" y="0.5969" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="11.8872" y="1.2192" size="0.4064" layer="27"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0805" value="2.2uf" x="9.652" y="1.7526"/>
+<element name="C2" library="SparkFun-Capacitors" package="0805" value="2.2uf" x="11.3284" y="10.6172" rot="R180"/>
 <element name="S1" library="SparkFun-Electromechanical" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="3.9624" y="29.781496875"/>
 <element name="S2" library="SparkFun-Electromechanical" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="54.1274" y="29.781496875"/>
 <element name="R7" library="SparkFun-Passives" package="0805" value="33" x="11.0236" y="19.7866" smashed="yes" rot="R270">
@@ -1434,16 +1409,16 @@ This is the Seeed 2 layer board rules</description>
 </element>
 <element name="OUT-B" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="42.9514" y="5.5118"/>
 <element name="U$2" library="mishafarms" package="IFL-LOGO" value="IFL-LOGO" x="29.5402" y="22.987"/>
-<element name="H1" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="54.1274" y="13.508565625" smashed="yes"/>
+<element name="12V" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="54.1274" y="13.508565625" smashed="yes"/>
 <element name="IN" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="3.9624" y="5.1943"/>
 <element name="H3" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="3.9624" y="21.82283125" smashed="yes"/>
 <element name="H4" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="3.9624" y="13.508565625" smashed="yes"/>
 <element name="OUT" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="54.1274" y="5.1943" smashed="yes"/>
 <element name="H6" library="holes" package="2,8-PAD" value="MOUNT-PAD-ROUND2.8" x="54.1274" y="21.82283125" smashed="yes"/>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="-27.7876" y="-21.4884">
-<attribute name="CREVISON" value="1.0" x="-27.7876" y="-21.4884" size="1.778" layer="27" display="off"/>
-<attribute name="DESIGNER" value="Michael L. Weiss" x="-27.7876" y="-21.4884" size="1.778" layer="27" display="off"/>
-<attribute name="VERSION" value="v1.0" x="-27.7876" y="-21.4884" size="1.778" layer="27" display="off"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="-0.1016" y="-1.0414">
+<attribute name="CREVISON" value="1.1" x="-0.1016" y="-1.0414" size="1.778" layer="27" display="off"/>
+<attribute name="DESIGNER" value="Michael L. Weiss" x="-0.1016" y="-1.0414" size="1.778" layer="27" display="off"/>
+<attribute name="VERSION" value="v1.0" x="-0.1016" y="-1.0414" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -1527,26 +1502,15 @@ This is the Seeed 2 layer board rules</description>
 <via x="1.3462" y="25.6286" extent="1-16" drill="0.35"/>
 <via x="51.3334" y="17.6276" extent="1-16" drill="0.35"/>
 <via x="48.8696" y="3.6576" extent="1-16" drill="0.35"/>
+<contactref element="U2" pad="4"/>
 </signal>
 <signal name="VDD">
 <contactref element="U2" pad="1"/>
 <contactref element="C1" pad="1"/>
-<contactref element="H1" pad="B2,8"/>
+<contactref element="12V" pad="B2,8"/>
 <contactref element="H4" pad="B2,8"/>
-<wire x1="13.561" y1="6.9864" x2="13.2334" y2="6.9864" width="0.6096" layer="1"/>
-<wire x1="13.2334" y1="6.9864" x2="13.2334" y2="9.0678" width="0.6096" layer="1"/>
-<wire x1="13.1318" y1="9.0678" x2="12.2538" y2="9.0678" width="0.6096" layer="1"/>
-<wire x1="12.2538" y1="9.0678" x2="12.2792" y2="9.525" width="0.6096" layer="1"/>
-<wire x1="3.9624" y1="13.508565625" x2="12.8016" y2="13.508565625" width="2.54" layer="16"/>
-<wire x1="25.7048" y1="13.406965625" x2="12.827" y2="13.508565625" width="2.54" layer="16"/>
-<wire x1="36.501584375" y1="13.445559375" x2="25.7048" y2="13.406965625" width="2.54" layer="16"/>
+<wire x1="25.7048" y1="13.406965625" x2="36.501584375" y2="13.445559375" width="2.54" layer="16"/>
 <wire x1="36.501584375" y1="13.445559375" x2="54.1274" y2="13.508565625" width="2.54" layer="16"/>
-<wire x1="12.8016" y1="13.508565625" x2="12.827" y2="13.508565625" width="0.6096" layer="16"/>
-<wire x1="13.2334" y1="9.0678" x2="13.1318" y2="9.0678" width="0.6096" layer="1"/>
-<wire x1="13.1318" y1="9.0678" x2="13.1318" y2="13.1064" width="0.6096" layer="1"/>
-<wire x1="13.1318" y1="13.1064" x2="12.827" y2="13.2334" width="0.6096" layer="1"/>
-<wire x1="12.827" y1="13.2334" x2="12.827" y2="13.508565625" width="0.6096" layer="1"/>
-<via x="12.827" y="13.508565625" extent="1-16" drill="0.35"/>
 <contactref element="R2" pad="2"/>
 <contactref element="R12" pad="2"/>
 <contactref element="R9" pad="2"/>
@@ -1563,11 +1527,26 @@ This is the Seeed 2 layer board rules</description>
 <via x="36.5506" y="21.1836" extent="1-16" drill="0.35"/>
 <wire x1="36.5506" y1="21.1836" x2="36.501584375" y2="21.134584375" width="0.6096" layer="16"/>
 <wire x1="36.501584375" y1="21.134584375" x2="36.501584375" y2="13.445559375" width="0.6096" layer="16"/>
+<wire x1="3.9624" y1="13.508565625" x2="9.2964" y2="13.508565625" width="2.54" layer="16"/>
+<wire x1="9.2964" y1="13.508565625" x2="25.459515625" y2="13.508565625" width="2.54" layer="16"/>
+<wire x1="25.459515625" y1="13.508565625" x2="25.7048" y2="13.406965625" width="2.54" layer="16" curve="-45"/>
+<wire x1="9.2964" y1="13.508565625" x2="8.9662" y2="13.178365625" width="0.4064" layer="16" curve="90"/>
+<via x="8.9662" y="2.4384" extent="1-16" drill="0.35"/>
+<wire x1="8.9662" y1="2.4384" x2="8.9408" y2="2.413" width="0.4064" layer="1" curve="90"/>
+<wire x1="8.9408" y1="2.413" x2="8.9408" y2="1.4224" width="0.6096" layer="1"/>
+<wire x1="8.9408" y1="1.4224" x2="9.4632" y2="1.4224" width="0.6096" layer="1"/>
+<wire x1="9.4632" y1="1.4224" x2="9.5648" y2="1.3208" width="0.4064" layer="1" curve="-90"/>
+<wire x1="8.9662" y1="13.178365625" x2="8.9662" y2="2.4384" width="0.6096" layer="16"/>
+<wire x1="9.5648" y1="1.3208" x2="9.8044" y2="1.5604" width="0.6096" layer="1" curve="90"/>
+<wire x1="9.8044" y1="1.5604" x2="9.8044" y2="2.9464" width="0.6096" layer="1"/>
+<wire x1="9.8044" y1="2.9464" x2="13.589" y2="2.9464" width="0.6096" layer="1"/>
+<wire x1="13.589" y1="2.9464" x2="13.6398" y2="2.9972" width="0.4064" layer="1" curve="90"/>
+<wire x1="13.6398" y1="2.9972" x2="13.561" y2="3.076" width="0.4064" layer="1" curve="-90"/>
+<wire x1="13.561" y1="3.076" x2="13.561" y2="3.9864" width="0.6096" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U2" pad="3"/>
 <contactref element="C2" pad="1"/>
-<contactref element="U2" pad="4"/>
 <contactref element="R8" pad="1"/>
 <contactref element="OPTO-R" pad="1"/>
 <contactref element="OPTO-G" pad="1"/>
@@ -1582,17 +1561,14 @@ This is the Seeed 2 layer board rules</description>
 <wire x1="22.4282" y1="29.7636" x2="22.4282" y2="22.5806" width="0.6096" layer="1"/>
 <wire x1="33.1724" y1="29.9922" x2="33.3756" y2="29.9922" width="0.6096" layer="1"/>
 <wire x1="33.3756" y1="29.9922" x2="33.3756" y2="22.5806" width="0.6096" layer="1"/>
-<wire x1="8.752" y1="1.7526" x2="8.7122" y2="1.7924" width="0.6096" layer="1"/>
-<wire x1="8.7122" y1="5.461" x2="8.7122" y2="1.7924" width="0.6096" layer="1"/>
-<wire x1="8.7376" y1="5.4864" x2="8.7122" y2="5.461" width="0.6096" layer="1"/>
-<wire x1="15.1384" y1="18.8358" x2="15.113" y2="18.8104" width="0.6096" layer="1"/>
-<wire x1="15.113" y1="17.4498" x2="8.7376" y2="17.4498" width="0.6096" layer="1"/>
-<wire x1="8.7376" y1="17.4498" x2="8.7376" y2="5.4864" width="0.6096" layer="1"/>
-<wire x1="15.113" y1="18.8104" x2="15.113" y2="17.4498" width="0.6096" layer="1"/>
-<wire x1="13.211" y1="5.4864" x2="8.7376" y2="5.4864" width="0.6096" layer="1"/>
-<wire x1="8.7376" y1="5.4864" x2="8.7122" y2="5.4864" width="0.254" layer="1"/>
-<wire x1="8.7122" y1="5.4864" x2="8.7122" y2="5.461" width="0.254" layer="1"/>
-<wire x1="10.911" y1="5.4864" x2="8.7376" y2="5.4864" width="0.6096" layer="1"/>
+<wire x1="15.113" y1="18.8104" x2="15.1384" y2="18.8358" width="0.6096" layer="1"/>
+<wire x1="13.561" y1="6.9864" x2="12.827" y2="6.9864" width="0.6096" layer="1"/>
+<wire x1="12.827" y1="17.1704" x2="15.113" y2="17.1704" width="0.6096" layer="1"/>
+<wire x1="12.827" y1="6.9864" x2="12.827" y2="10.7188" width="0.6096" layer="1"/>
+<wire x1="12.827" y1="10.7188" x2="12.827" y2="17.1704" width="0.6096" layer="1"/>
+<wire x1="15.113" y1="17.1704" x2="15.113" y2="18.8104" width="0.6096" layer="1"/>
+<wire x1="12.827" y1="10.7188" x2="12.2284" y2="10.7188" width="0.6096" layer="1"/>
+<wire x1="12.2284" y1="10.7188" x2="12.2284" y2="10.6172" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="2"/>

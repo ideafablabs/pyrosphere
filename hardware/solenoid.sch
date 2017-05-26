@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -186,31 +186,6 @@
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
-<package name="SOT89R@1">
-<description>&lt;b&gt;SOT89 Reflow soldering&lt;/b&gt;</description>
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1104" width="0.1524" layer="51"/>
-<wire x1="2.2724" y1="-1.1104" x2="-2.2724" y2="-1.1104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="-1.1104" x2="-2.2724" y2="1.6104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="1.6104" x2="2.2724" y2="1.6104" width="0.1524" layer="51"/>
-<wire x1="-2.2724" y1="-1.1024" x2="-2.2724" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="-2.2724" y1="1.6104" x2="-1.2136" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1024" width="0.1524" layer="21"/>
-<wire x1="1.2636" y1="1.6104" x2="2.2724" y2="1.6104" width="0.1524" layer="21"/>
-<wire x1="-0.5776" y1="-1.1104" x2="-0.9364" y2="-1.1104" width="0.1524" layer="21"/>
-<wire x1="0.9224" y1="-1.1104" x2="0.5636" y2="-1.1104" width="0.1524" layer="21"/>
-<smd name="1" x="1.5" y="-1.75" dx="0.7" dy="1.1" layer="1"/>
-<smd name="2" x="-1.5" y="-1.75" dx="0.7" dy="1.1" layer="1"/>
-<smd name="3" x="0" y="-1.4" dx="0.7" dy="1.8" layer="1" stop="no" cream="no"/>
-<smd name="4" x="0" y="0.9" dx="2" dy="2.8" layer="1"/>
-<text x="-2.205" y="2.455" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.205" y="-3.825" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="-2.15" x2="-1.25" y2="-1.15" layer="51"/>
-<rectangle x1="-0.25" y1="-2.15" x2="0.25" y2="-1.15" layer="51"/>
-<rectangle x1="1.25" y1="-2.15" x2="1.75" y2="-1.15" layer="51"/>
-<rectangle x1="-0.85" y1="1.65" x2="0.85" y2="2.2" layer="51"/>
-<rectangle x1="-0.35" y1="-2.3" x2="0.35" y2="-1.2" layer="31"/>
-<rectangle x1="-0.45" y1="-2.4" x2="0.45" y2="-1.1" layer="29"/>
 </package>
 <package name="SOT89R">
 <description>&lt;b&gt;SOT89 Reflow soldering&lt;/b&gt;</description>
@@ -1106,11 +1081,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <gate name="G$1" symbol="AP2204R" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89R@1">
+<device name="" package="SOT89R">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
 <connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3 4"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4051,14 +4026,14 @@ Source: www.kingbright.com</description>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND2" device=""/>
 <part name="D3" library="mishafarms" deviceset="SUPPRESSOR-" device="SMBJ" value="36V"/>
 <part name="OUT-B" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
-<part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
+<part name="12V" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="IN" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H3" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H4" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="OUT" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H6" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE">
-<attribute name="CREVISON" value="1.0"/>
+<attribute name="CREVISON" value="1.1"/>
 <attribute name="DESIGNER" value="Michael L. Weiss"/>
 <attribute name="VERSION" value="v1.0"/>
 </part>
@@ -4134,7 +4109,7 @@ Source: www.kingbright.com</description>
 <instance part="OUT-B" gate="G$1" x="162.56" y="78.74" smashed="yes">
 <attribute name="NAME" x="165.354" y="79.3242" size="1.778" layer="95"/>
 </instance>
-<instance part="H1" gate="G$1" x="12.7" y="101.6" smashed="yes" rot="R180">
+<instance part="12V" gate="G$1" x="12.7" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="9.906" y="101.0158" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="IN" gate="G$1" x="12.7" y="93.98" smashed="yes" rot="R180">
@@ -4286,7 +4261,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="SUPPLY13" gate="VDD" pin="VDD"/>
 <wire x1="25.4" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="H1" gate="G$1" pin="MOUNT"/>
+<pinref part="12V" gate="G$1" pin="MOUNT"/>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="VDD" pin="VDD"/>
