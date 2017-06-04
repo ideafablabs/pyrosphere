@@ -1370,7 +1370,7 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="NAME" x="15.8496" y="28.84805" size="1.27" layer="21"/>
 <attribute name="VALUE" x="13.7668" y="27.6479" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C3" library="SparkFun-Capacitors" package="0805" value="400nf" x="19.7612" y="16.7132" rot="R180"/>
+<element name="C3" library="SparkFun-Capacitors" package="0805" value="1uf" x="19.7612" y="16.7132" rot="R180"/>
 <element name="D2" library="mishafarms" package="SMBJ" value="36V" x="15.9004" y="11.9888" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.7894" y="12.4714" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="17.1704" y="10.9474" size="0.8128" layer="27" rot="R180"/>
@@ -1386,7 +1386,7 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="NAME" x="26.6954" y="28.84805" size="1.27" layer="21"/>
 <attribute name="VALUE" x="24.6126" y="27.6479" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C7" library="SparkFun-Capacitors" package="0805" value="400nf" x="30.607" y="16.9418" rot="R180"/>
+<element name="C7" library="SparkFun-Capacitors" package="0805" value="1uf" x="30.607" y="16.9418" rot="R180"/>
 <element name="D4" library="mishafarms" package="SMBJ" value="36V" x="26.7462" y="12.2174" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.0858" y="11.7856" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="27.7876" y="11.176" size="0.8128" layer="27" rot="R180"/>
@@ -1402,7 +1402,7 @@ This is the Seeed 2 layer board rules</description>
 <attribute name="NAME" x="37.9476" y="28.84805" size="1.27" layer="21"/>
 <attribute name="VALUE" x="35.8648" y="27.6479" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0805" value="400nf" x="41.8592" y="16.9418" rot="R180"/>
+<element name="C4" library="SparkFun-Capacitors" package="0805" value="1uf" x="41.8592" y="16.9418" rot="R180"/>
 <element name="D3" library="mishafarms" package="SMBJ" value="36V" x="37.9984" y="12.2174" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.8874" y="12.9286" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="39.0652" y="11.1506" size="0.8128" layer="27" rot="R180"/>

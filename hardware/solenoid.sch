@@ -3998,7 +3998,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="400nf"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uf"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND2" device=""/>
 <part name="D2" library="mishafarms" deviceset="SUPPRESSOR-" device="SMBJ" value="36V"/>
 <part name="OUT-R" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
@@ -4010,7 +4010,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="G" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="400nf"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uf"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND2" device=""/>
 <part name="D4" library="mishafarms" deviceset="SUPPRESSOR-" device="SMBJ" value="36V"/>
 <part name="OUT-G" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
@@ -4022,7 +4022,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="B" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="400nf"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uf"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND2" device=""/>
 <part name="D3" library="mishafarms" deviceset="SUPPRESSOR-" device="SMBJ" value="36V"/>
 <part name="OUT-B" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
